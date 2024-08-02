@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 211, 247);
+}
+h1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 5rem;
+    justify-content: center;
+    margin-top: 70px;
+    letter-spacing: 5px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#drumIcon{
+    height: 5rem;
+    width: 5rem;
+}
+
+.set{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    row-gap: 40px;
+    padding-top: 50px;
+}
+.drum{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 5rem;
+    color: rgb(60, 2, 60);
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pressed{
+    background-color: greenyellow;
+    box-shadow: 0 7px 7px 0 #191c1d;
+}
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 3.5rem;
+        gap: 15px;
+        letter-spacing: 2px;
+    }
+    #drumIcon{
+        height: 3rem;
+        width: 3rem;
+    }
+    .set{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+    .drum{
+        height: 100px;
+        width: 100px;
+        font-size: 3rem;
+        color: rgb(60, 2, 60);
+    }
+}
